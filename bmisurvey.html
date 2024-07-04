@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="stylesheet" href="s.css">
+<script src="script.js"></script>
+</head>
+<body>
+ <style>
+body {
+  background-image: url(''https://img.freepik.com/free-vector/white-abstract-background-3d-paper-style_23-2148390818.jpg?w=2000'');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<form name="BMI" action="bmi.jsp" method="post">
+<div class="left">
+<h1>SURVEY FORM</h1>
+<label> <b>Firstname:</b></label><input type="text" name="fname" placeholder="enter first name" required/><br>  
+<label><b> Lastname:</b></label> <input type="text" name="lname" placeholder="enter last name" required/><br>
+<label><b> Enter Reg.No:</b></label><input type="text" name="regno" placeholder="enter reg no." required/><br>
+<label><b>Course:</b></label>   
+	<select id="branch" name="course" required>    
+		<option value="CSE">CSE</option>  
+		<option value="ECE">ECE</option>  
+		<option value="EEE">EEE</option>  
+		<option value="IT">IT</option>  
+		<option value="Civil">Civil</option>  
+		<option value="Mech">Mech</option>  
+	</select> <br> 
+  	
+	<label><b>Gender:</b></label> 
+	<input type="radio" name="gender" value="male" required> Male   
+	<input type="radio" name="gender" value="female" /> Female
+	
+  <br>
+	<label><b>Phone:</b></label><input type="text" name="phone" placeholder="enter mobile number"/> <br>
+	 
+	<label><b>Email:</b></label><input type="email" id="email" name="email" placeholder="enter your mail" required/><br>
+
+	<label><b>Age:</b></label> <input type="text" id="age" name="age" placeholder="enter your age" required/> <br>
+	
+  	<label><b>Blood Group:</b></label>
+	<input type="text" id="blood" name="bloodgroup" placeholder="enter blood group" required/> <br>
+	<label><b>Weight:</b></label> <input type="text" id="weight" name="weight" placeholder="enter weight in cm" required/><br>
+	<label><b>Height:</b></label> <input type="text" id="height" name="height" placeholder="enter height in cm" required/><br>
+
+<input class="decoration-one px-3 py-2" type="button" value="Calculate BMI" onClick="calculateBmi()">
+<input class="decoration-one px-3 py-2" type="submit" value="Submit">
+</div>
+<div class="right">
+<h1>BMI VALUE:</h1>
+<h6><input type="text" name="bmi" placeholder="Your BMI Will be here" size="50"><br /><br/</h6>
+<h2>STATUS:</h2><br/>
+<h8><input type="text" name="meaning" size="50"><br /><br/></h8>
+<h9><input class="decoration-one px-3 py-2" type="reset" value="Reset" /></h9>
+</div>
+<br/>
+
+</form>
+
+</html>

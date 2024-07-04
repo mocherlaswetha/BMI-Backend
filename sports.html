@@ -1,0 +1,53 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>SPORTS</h1>
+<marquee width="100%" direction="right" height="20px">
+Enrollment dates will be released soon...
+</marquee>
+<h2>The Health Benefits of Exercise in Overweight and Obese Patients.</h2>
+<p>More than 30% of U.S. adults are obese or overweight.</p>
+<p> A program of regular physical activity is recommended as part of an effective lifestyle intervention for weight loss and weight management. </p>
+<p>However, more than 40% of adults do not engage in sufficient physical activity to realize these beneficial effects on body weight.</p>
+
+<div class="row">
+  <div class="column">
+    <img src="https://post.healthline.com/wp-content/uploads/2020/09/6382-children_playing_soccer-732x549-thumbnail-732x549.jpg" alt="yoga1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://media.nature.com/lw800/magazine-assets/d41586-021-00814-5/d41586-021-00814-5_19015374.jpg" alt="yoga2" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://ec.europa.eu/eurostat/documents/6921402/9104237/Shutterstock_Lisa_Kolbasa.png/f988f8b6-4138-4a91-9761-885bacab0ce2?t=1533725002000" alt="yoga3" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

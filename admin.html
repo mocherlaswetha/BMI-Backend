@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://wallpaperaccess.com/full/1799643.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.container{  
+        width: 50%;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 10 0 0 200px;  
+        padding: 80px;  
+        background:#F2F2F2;  
+        border-radius: 5px ;  
+          
+}  
+
+
+</style>
+</head>
+<body>
+<div class=container>
+<h2><center>Click on student button for student information</center></h2>
+<div class="center">
+<div class="center">
+<form action="stuentlist.jsp">
+<button class="button button1" >Student list</button>
+</form>
+</div>
+<br>
+<h2>Search student information by department</h2>
+<form action="branchsearch.jsp">
+<input type="text" placeholder="enter student department" name="course"><input type="submit" value="Search"  class="button button2" >
+</form>
+<h2>Search student information by Regno</h2>
+<form action="regsearch.jsp">
+<input type="text" placeholder="enter student regno"  name="regno"><input type="submit" value="Search"class="button button2" >
+</form>
+<form action="delete.jsp" method="post">
+<h2>Delete student record</h2>
+<input type="text" name="regno" placeholder="enter student record to delete"><input type="submit" value="Delete" class="button button2">
+</form>
+</div>
+</div>
+</body>
+</html>

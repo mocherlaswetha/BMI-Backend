@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+.container{
+	width:100%;
+	height:100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("background.jpg");
+	background-position:center;
+	background-size:cover;
+	padding-left:8%;
+	padding-right:8%;
+	box-sizing:border-box;
+	}
+	.row{
+	display:flex;
+	height:88%;
+	align-items:center;
+	}
+	.col{
+	flex-basis:50%;
+	}
+	h1{
+	color:#fff;
+	font-size:70px;
+	}
+	p{
+	color:#fff;
+	font-size:20px;
+	line-height:15px;
+	}
+	button{
+	width:180px;
+	color:#000;
+	font-size:20px;
+	padding:12px 0;
+	background:#fff;
+	border:0;
+	border-radius:20px;
+	outline:none;
+	margin-top:30px;
+	}
+	button:hover{
+	transform:translateY(-10px);
+	}
+	.card{
+	width:200px;
+	height:230px;
+	display:in line-block;
+	border-radius:10px;
+	padding:15px 25px;
+	box-sizing:border-box;
+	cursor:pointer;
+	margin:10px 15px;
+	background-position:center;
+	background-size:cover;
+	transition:transform 0.5s;
+	}
+	.card1{
+	background-image:url("yoga.jpg");
+	}
+	.card2{
+	background-image:url("sports.jpg");
+	}
+	.card3{
+	background-image:url("blog.jpg");
+	
+	}
+	.card4{
+	background-image:url("bmiImg.jpg");
+	}
+	.card:hover{
+	transform:translateY(-10px);
+	}
+	h5{
+	color:white;
+	text-shadow:0 0 5px #999;
+	}
+	
+	}
+	.desc{
+	width:100%;
+	height:80vh;
+	padding-left:13%;
+	padding-right:8%;
+	box-sizing:border-box;
+	}
+	.desc p{
+	color:white;
+	text-transform:Capitalize;
+	font-size:20px;
+	line-height:25px;
+	font-family:"Arial"
+	}
+       .topnav{
+         position:absolute;
+    background-color:white;
+     top:50px;
+     right:50px;
+}
